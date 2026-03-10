@@ -12,7 +12,7 @@ All code is developed and tested using Google Colab.
 **Focus:** Non-linear convection-diffusion and shockwave formation.
 The Burgers' equation is a fundamental PDE in fluid mechanics. In this problem, a PINN is trained to capture the formation of a sharp shockwave over time. The results are rigorously validated against the exact analytical solution derived via the Cole-Hopf transformation. 
 * 👉 **[Click here for the detailed Problem 1 explanation](./PROBLEM1_README.md)**
-* 👉 **[Click here for the Python/Colab Code](./burgers_pinn.ipynb)**
+* 👉 **[Click here for the Python/Colab Code](./1D_burgers_PINN.ipynb)**
 
 ### ⏳ Future Work (Coming Soon)
 Over the course of this project, four additional PDEs will be added, with a strong emphasis on aerodynamics and flight dynamics:
