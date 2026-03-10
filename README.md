@@ -10,13 +10,16 @@ All code is developed and tested using Google Colab.
 
 ### Problem 1: 1D Burgers' Equation
 **Focus:** Non-linear convection-diffusion and shockwave formation.
-The Burgers' equation is a fundamental PDE in fluid mechanics. In this problem, a PINN is trained to capture the formation of a sharp shockwave over time. The results are rigorously validated against the exact analytical solution derived via the Cole-Hopf transformation. 
 * 👉 **[Click here for the detailed Problem 1 explanation](./PROBLEM1_README.md)**
-* 👉 **[Click here for the Python/Colab Code](./1D_burgers_PINN.ipynb)**
+* 👉 **[Click here for the Python/Colab Code](./burgers_pinn.ipynb)**
+
+### Problem 2: 1D Euler Equations (Sod Shock Tube)
+**Focus:** Compressible Aerodynamics, Shockwaves, and Artificial Viscosity.
+The 1D Euler equations govern compressible, inviscid fluid flow. This problem demonstrates the challenge of training deep learning models on sharp discontinuities (shocks, contact surfaces) and uses Artificial Viscosity to stabilize the network.
+* 👉 **[Click here for the detailed Problem 2 explanation](./PROBLEM2_README.md)**
+* 👉 **[Click here for the Python/Colab Code](./euler_pinn.ipynb)**
 
 ### ⏳ Future Work (Coming Soon)
-Over the course of this project, four additional PDEs will be added, with a strong emphasis on aerodynamics and flight dynamics:
-* **Problem 2:** 1D Euler Equations (Aerodynamics - Sod Shock Tube Problem)
 * **Problem 3:** 2D Incompressible Navier-Stokes Equations (Aerodynamics - Flow over a cylinder)
 * **Problem 4:** Pitch-Plunge Aeroelasticity System (Flight Dynamics / Flutter Analysis)
 * **Problem 5:** 2D Heat/Wave Equation (Thermodynamics/Acoustics)
