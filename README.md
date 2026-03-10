@@ -11,13 +11,13 @@ All code is developed and tested using Google Colab.
 ### Problem 1: 1D Burgers' Equation
 **Focus:** Non-linear convection-diffusion and shockwave formation.
 * 👉 **[Click here for the detailed Problem 1 explanation](./PROBLEM1_README.md)**
-* 👉 **[Click here for the Python/Colab Code](./burgers_pinn.ipynb)**
+* 👉 **[Click here for the Python/Colab Code](./1D_burgers_PINN.ipynb)**
 
 ### Problem 2: 1D Euler Equations (Sod Shock Tube)
 **Focus:** Compressible Aerodynamics, Shockwaves, and Artificial Viscosity.
 The 1D Euler equations govern compressible, inviscid fluid flow. This problem demonstrates the challenge of training deep learning models on sharp discontinuities (shocks, contact surfaces) and uses Artificial Viscosity to stabilize the network.
 * 👉 **[Click here for the detailed Problem 2 explanation](./PROBLEM2_README.md)**
-* 👉 **[Click here for the Python/Colab Code](./euler_pinn.ipynb)**
+* 👉 **[Click here for the Python/Colab Code](./1d_Euler_Shock_Tube_PINN.ipynb)**
 
 ### ⏳ Future Work (Coming Soon)
 * **Problem 3:** 2D Incompressible Navier-Stokes Equations (Aerodynamics - Flow over a cylinder)
