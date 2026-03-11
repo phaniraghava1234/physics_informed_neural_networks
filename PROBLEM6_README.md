@@ -18,7 +18,7 @@ Because a cylinder is perfectly symmetric, we can derive an exact mathematical s
    $$P_{inc}(x,y) = e^{ikx}$$
 2. **Scattered Field:** The scattered wave is expressed as an infinite series of Bessel functions of the first kind ($J_m$) and Hankel functions of the first kind ($H_m^{(1)}$):
    $$P_{scat}(r, \theta) = -\sum_{m=0}^{\infty} \epsilon_m i^m \left( \frac{J_m'(ka)}{H_m^{(1)'}(ka)} \right) H_m^{(1)}(kr) \cos(m\theta)$$
-   *(Where $a=0.5$ is the cylinder radius, and $\epsilon_m$ is the Neumann factor: 1 if $m=0$, else 2).*
+   *(Where $$a=0.5$$ is the cylinder radius, and $\epsilon_m$ is the Neumann factor: 1 if $m=0$, else 2).*
 
 This exact solution serves as our absolute ground truth for validating the neural network throughout the following three iterations.
 
