@@ -25,9 +25,15 @@ The Navier-Stokes equations are the ultimate governing equations of fluid dynami
 * 👉 **[Click here for the detailed Problem 3 explanation](./PROBLEM3_README.md)**
 * 👉 **[Click here for the Python/Colab Code](./2D_Navier_Stokes_PINN.ipynb)**
 
+### Problem 4: Pitch-Plunge Aeroelasticity System
+**Focus:** Flight Dynamics, Coupled ODEs, Spectral Bias, and Fourier Features.
+Solving time-dependent, 2nd-order coupled structural dynamics. In this problem, a PINN is trained to predict the damped aeroelastic response (pitching and plunging) of an aircraft wing section, overcoming Spectral Bias using Fourier Feature Embeddings.
+* 👉 **[Click here for the detailed Problem 4 explanation](./PROBLEM4_README.md)**
+* 👉 **[Click here for the Python/Colab Code](./Pitch-Plunge Aeroelasticity PINN.ipynb)**
+
 ### ⏳ Future Work (Coming Soon)
-* **Problem 4:** Pitch-Plunge Aeroelasticity System (Flight Dynamics / Flutter Analysis)
-* **Problem 5:** 2D Heat/Wave Equation (Thermodynamics/Acoustics)
+* **Problem 5:** 2D Transient Heat Equation (Thermodynamics)
+* **Problem 6:** 2D Wave Equation (Acoustics & Vibrations)
 
 ## 🛠️ Tech Stack & Methodology
 * **Framework:** PyTorch
