@@ -47,6 +47,3 @@ Solving parabolic PDEs over a 2D spatial domain and time. The PINN simultaneousl
 
 ## 👨‍💻 About
 This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
-
-## 👨‍💻 About
-This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
