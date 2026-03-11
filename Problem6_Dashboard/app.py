@@ -14,6 +14,9 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import scipy.special as sp
 
+# Print to the command prompt so you know it's working!
+print("Libraries loaded successfully. Starting Streamlit...")
+
 # --- 1. Page Configuration ---
 st.set_page_config(page_title="Aeroacoustics PINN", layout="wide")
 st.title("🛩️ Aeroacoustics Physics-Informed Neural Network")
@@ -49,12 +52,18 @@ def load_model():
     device = torch.device('cpu') # Force CPU for web deployment
     layers = [2, 128, 128, 128, 128, 2]
     model = SIREN(layers, omega_0=10.0).to(device)
+    
+    # CRITICAL FIX 3: Robust pathing for Streamlit Cloud
+    # Forces Streamlit to look in the exact folder where app.py is running from
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(current_dir, 'siren_aeroacoustics.pth')
+    
     try:
-        model.load_state_dict(torch.load('siren_aeroacoustics.pth', map_location=device))
+        model.load_state_dict(torch.load(model_path, map_location=device))
         model.eval()
         return model
     except FileNotFoundError:
-        st.error("Model file 'siren_aeroacoustics.pth' not found! Please upload it.")
+        st.error(f"Model file not found at: {model_path}. Please check GitHub.")
         return None
 
 model = load_model()
