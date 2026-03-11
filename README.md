@@ -19,8 +19,13 @@ The 1D Euler equations govern compressible, inviscid fluid flow. This problem de
 * 👉 **[Click here for the detailed Problem 2 explanation](./PROBLEM2_README.md)**
 * 👉 **[Click here for the Python/Colab Code](./1d_Euler_Shock_Tube_PINN.ipynb)**
 
+### Problem 3: 2D Incompressible Navier-Stokes Equations
+**Focus:** 2D Aerodynamics, Kovasznay Flow, and Steady Incompressible Fluids.
+The Navier-Stokes equations are the ultimate governing equations of fluid dynamics. In this problem, a PINN learns the 2D velocity and pressure fields of the classic Kovasznay flow (modeling the wake behind a grid) relying purely on boundary conditions and physics losses.
+* 👉 **[Click here for the detailed Problem 3 explanation](./PROBLEM3_README.md)**
+* 👉 **[Click here for the Python/Colab Code](./2D_Navier_Stokes_PINN.ipynb)**
+
 ### ⏳ Future Work (Coming Soon)
-* **Problem 3:** 2D Incompressible Navier-Stokes Equations (Aerodynamics - Flow over a cylinder)
 * **Problem 4:** Pitch-Plunge Aeroelasticity System (Flight Dynamics / Flutter Analysis)
 * **Problem 5:** 2D Heat/Wave Equation (Thermodynamics/Acoustics)
 
@@ -28,6 +33,9 @@ The 1D Euler equations govern compressible, inviscid fluid flow. This problem de
 * **Framework:** PyTorch
 * **Environment:** Google Colab
 * **Approach:** Continuous time, data-free interior domain training using automatic differentiation (`torch.autograd`).
+
+## 👨‍💻 About
+This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
 
 ## 👨‍💻 About
 This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
