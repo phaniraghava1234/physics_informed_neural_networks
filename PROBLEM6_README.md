@@ -1,6 +1,10 @@
 # Problem 6: Aeroacoustics (Sound Scattering by a Blunt Body)
 
 This folder contains the PyTorch implementation of an advanced Physics-Informed Neural Network (PINN) designed to solve the complex-valued Helmholtz Equation, a fundamental partial differential equation in aeroacoustics and electromagnetics.
+## 📐 Aeroelastic Geometry Schematic
+Below is the geometric schematic.
+
+![Aeroelastic Geometry](./aeroacoustics_geometry.png)
 
 ## 📌 Problem Formulation & Exact Analytical Solution
 
