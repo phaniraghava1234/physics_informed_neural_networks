@@ -31,14 +31,22 @@ Solving time-dependent, 2nd-order coupled structural dynamics. In this problem, 
 * 👉 **[Click here for the detailed Problem 4 explanation](./PROBLEM4_README.md)**
 * 👉 **[Click here for the Python/Colab Code](./Pitch_Plunge_Aeroelasticity_PINN.ipynb)**
 
+### Problem 5: 2D Transient Heat Equation
+**Focus:** Thermodynamics, 3D Spatiotemporal Inputs, and Mixed Partial Derivatives.
+Solving parabolic PDEs over a 2D spatial domain and time. The PINN simultaneously maps $X$, $Y$, and $T$ inputs to predict the diffusion of a heat spike across a metal plate, demonstrating the network's ability to learn 3D volumetric physics data.
+* 👉 **[Click here for the detailed Problem 5 explanation](./PROBLEM5_README.md)**
+* 👉 **[Click here for the Python/Colab Code](./2D_Heat_Equation_PINN.ipynb)**
+
 ### ⏳ Future Work (Coming Soon)
-* **Problem 5:** 2D Transient Heat Equation (Thermodynamics)
 * **Problem 6:** 2D Wave Equation (Acoustics & Vibrations)
 
 ## 🛠️ Tech Stack & Methodology
 * **Framework:** PyTorch
 * **Environment:** Google Colab
 * **Approach:** Continuous time, data-free interior domain training using automatic differentiation (`torch.autograd`).
+
+## 👨‍💻 About
+This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
 
 ## 👨‍💻 About
 This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
