@@ -88,6 +88,18 @@ Notice the perfect formation of the standing wave interference pattern on the fr
 
 ![Final SIREN 1D Graphs](./aeroacoustics_1d_graphs_iter_3.png)
 
+---
+
+## 🔬 Deep Dive: The Acoustic Shadow Discrepancy (SPL Logarithmic Magnification)
+👉 **[Interact with the Live PINN Dashboard Here](https://problem6dashboard-ugzd2djarphhxfiexww4e9.streamlit.app/)** to explore this acoustic shadow, toggle between Real Pressure and SPL, and take real-time 1D cross-sections of the predicted wave!
+If you examine the 1D Acoustic Shadow Profile closely in the region where $X > 0.5$, you will notice a slight oscillating discrepancy between the PINN prediction and the exact analytical solution. This artifact is a fascinating intersection of wave physics, neural network optimization, and logarithmic mathematics:
+
+1. **Perfect Destructive Interference:** To create the acoustic shadow zone, the network doesn't simply predict "zero sound." Because we reconstruct the Total Field using $P_{tot} = P_{inc} + P_{scat}$, the network's scattered field must **perfectly destructively interfere** with the infinite incident wave ($e^{ikx}$). It must generate an exact mathematical inverse.
+2. **Logarithmic Magnification (SPL):** The network's predicted scattered wave might be off by a microscopic fraction of a percent (e.g., $0.001$ Pascals). In a standard Real Pressure plot, this error is completely invisible to the human eye. However, Sound Pressure Level (SPL) is plotted on a $20 \log_{10}$ scale. When the waves fail to cancel perfectly, they leave behind a tiny, microscopic residual sine wave. The logarithmic SPL scale drastically magnifies this tiny error, resulting in the large "beating" pattern (the red dashed loops).
+3. **The "No Man's Land" Sag:** Notice how the red dashed line suddenly snaps back to meet the exact blue line perfectly at exactly $X = 2.0$. This happens because the network is "pinned" by strict boundary conditions at the strut wall ($X=0.5$) and the outer boundary ($X=2.0$). In the space between them, it relies entirely on the $\nabla^2 P + k^2 P = 0$ PDE loss. The optimizer finds a lazy local minimum that satisfies the boundaries but slightly misses the phase in the "no man's land" in the middle.
+
+*Modern SOTA Fix:* In advanced 2024/2025 PINN research, this specific acoustic discrepancy is mitigated using **Spatial Loss Weighting**. Researchers program the loss function to dynamically multiply the PDE penalty by $10\times$ or $50\times$ specifically in the shadow region, forcing the optimizer to align the phase perfectly and eliminate the SPL oscillations.
+
 ## 📚 References
 1. Sitzmann, V., Martel, J., Bergman, A., Lindell, D., & Wetzstein, G. (2020). Implicit Neural Representations with Periodic Activation Functions. *Advances in Neural Information Processing Systems (NeurIPS)*, 33.
 2. Bowman, J. J., Senior, T. B. A., & Uslenghi, P. L. E. (1987). *Electromagnetic and Acoustic Scattering by Simple Shapes*. Hemisphere Publishing Corporation. (For the exact analytical Bessel/Hankel expansion).
