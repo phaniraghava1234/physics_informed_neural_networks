@@ -37,13 +37,16 @@ Solving parabolic PDEs over a 2D spatial domain and time. The PINN simultaneousl
 * 👉 **[Click here for the detailed Problem 5 explanation](./PROBLEM5_README.md)**
 * 👉 **[Click here for the Python/Colab Code](./2D_Heat_Equation_PINN.ipynb)**
 
-### ⏳ Future Work (Coming Soon)
-* **Problem 6:** 2D Wave Equation (Acoustics & Vibrations)
+### Problem 6: Aeroacoustics (Helmholtz Sound Scattering)
+**Focus:** Time-Harmonic Acoustics, Complex Fields, SIREN Networks, and Scattered Field Formulation.
+For the Grand Finale, a PINN is engineered to predict the scattering of high-frequency sound waves by an aerospace blunt body. This project documents the architectural evolution required to overcome severe phase-shifting, Fourier streaking, and wave propagation failures using Sine Representation Networks (SIREN) and Scattered Field physics mapping.
+* 👉 **[Click here for the detailed Problem 6 explanation](./PROBLEM6_README.md)**
 
 ## 🛠️ Tech Stack & Methodology
 * **Framework:** PyTorch
-* **Environment:** Google Colab
+* **Environment:** Google Colab / Local Windows PC (RTX 2060)
 * **Approach:** Continuous time, data-free interior domain training using automatic differentiation (`torch.autograd`).
 
 ## 👨‍💻 About
 This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
+"""
