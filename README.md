@@ -41,6 +41,7 @@ Solving parabolic PDEs over a 2D spatial domain and time. The PINN simultaneousl
 **Focus:** Time-Harmonic Acoustics, Complex Fields, SIREN Networks, and Scattered Field Formulation.
 For the Grand Finale, a PINN is engineered to predict the scattering of high-frequency sound waves by an aerospace blunt body. This project documents the architectural evolution required to overcome severe phase-shifting, Fourier streaking, and wave propagation failures using Sine Representation Networks (SIREN) and Scattered Field physics mapping.
 * 👉 **[Click here for the detailed Problem 6 explanation](./PROBLEM6_README.md)**
+* 👉 **[Click here for the Python/Colab Code](./Aeroacoustics_Scattering_PINN_iter_3.ipynb)**
 
 ## 🛠️ Tech Stack & Methodology
 * **Framework:** PyTorch
