@@ -36,6 +36,3 @@ The Navier-Stokes equations are the ultimate governing equations of fluid dynami
 
 ## 👨‍💻 About
 This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
-
-## 👨‍💻 About
-This repository was built by [phaniraghava1234](https://github.com/phaniraghava1234/physics_informed_neural_networks) to showcase advanced scientific machine learning techniques applied to aerospace and physics domains.
